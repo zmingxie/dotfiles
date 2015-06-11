@@ -84,6 +84,10 @@
 	<false/>
 	<key>NSNavLastRootDirectory</key>
 	<string>~/Documents</string>
+	<key>NSNavPanelExpandedSizeForOpenMode</key>
+	<string>{712, 448}</string>
+	<key>NSNavPanelExpandedSizeForSaveMode</key>
+	<string>{712, 565}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -113,13 +117,33 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame Preferences</key>
-	<string>559 343 924 485 0 0 1680 1027 </string>
+	<string>110 399 924 485 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>557 125 1019 932 0 0 1920 1057 </string>
+	<string>179 242 710 558 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>256 460 585 473 0 0 1680 1027 </string>
+	<string>229 10 710 558 0 0 1680 1027 </string>
+	<key>NSWindow Frame iTerm Window 10</key>
+	<string>418 547 570 473 0 0 1680 1027 </string>
+	<key>NSWindow Frame iTerm Window 11</key>
+	<string>439 524 570 473 0 0 1680 1027 </string>
+	<key>NSWindow Frame iTerm Window 12</key>
+	<string>460 501 570 473 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>1976 491 585 473 1920 0 1920 1057 </string>
+	<string>940 337 570 473 0 0 1680 1027 </string>
+	<key>NSWindow Frame iTerm Window 3</key>
+	<string>393 381 710 558 0 0 1680 1027 </string>
+	<key>NSWindow Frame iTerm Window 4</key>
+	<string>292 26 570 473 0 0 1680 1027 </string>
+	<key>NSWindow Frame iTerm Window 5</key>
+	<string>313 3 570 473 0 0 1680 1027 </string>
+	<key>NSWindow Frame iTerm Window 6</key>
+	<string>334 554 570 473 0 0 1680 1027 </string>
+	<key>NSWindow Frame iTerm Window 7</key>
+	<string>355 554 570 473 0 0 1680 1027 </string>
+	<key>NSWindow Frame iTerm Window 8</key>
+	<string>376 554 570 473 0 0 1680 1027 </string>
+	<key>NSWindow Frame iTerm Window 9</key>
+	<string>397 554 570 473 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -200,9 +224,9 @@
 				<key>Blue Component</key>
 				<real>1</real>
 				<key>Green Component</key>
-				<real>1</real>
+				<real>0.70506632328033447</real>
 				<key>Red Component</key>
-				<real>0.3333333432674408</real>
+				<real>0.3068995475769043</real>
 			</dict>
 			<key>Ansi 15 Color</key>
 			<dict>
@@ -326,9 +350,9 @@
 			<key>Close Sessions On End</key>
 			<true/>
 			<key>Columns</key>
-			<integer>80</integer>
+			<integer>100</integer>
 			<key>Command</key>
-			<string></string>
+			<string>/usr/local/bin/zsh</string>
 			<key>Cursor Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -350,7 +374,7 @@
 			<key>Cursor Type</key>
 			<integer>0</integer>
 			<key>Custom Command</key>
-			<string>No</string>
+			<string>Yes</string>
 			<key>Custom Directory</key>
 			<string>Advanced</string>
 			<key>Default Bookmark</key>
@@ -693,7 +717,7 @@
 			<key>Right Option Key Sends</key>
 			<integer>0</integer>
 			<key>Rows</key>
-			<integer>25</integer>
+			<integer>30</integer>
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
@@ -837,7 +861,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.17293129861354828</real>
+			<real>0.2238350510597229</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
@@ -860,6 +884,12 @@
 			<string>/Users/zhuxie</string>
 		</dict>
 	</array>
+	<key>NoSyncNeverRemindPrefsChangesCopy</key>
+	<true/>
+	<key>NoSyncTimeOfLastPromo</key>
+	<real>455000889.08050501</real>
+	<key>NoSyncTimeOfLastPromoDownload</key>
+	<real>455687637.90649998</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -906,7 +936,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>~/</string>
+	<string>/Users/mxie/dev/setup</string>
 	<key>PromptOnQuit</key>
 	<true/>
 	<key>QuitWhenAllWindowsClosed</key>
@@ -922,7 +952,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-02-24T05:13:30Z</date>
+	<date>2015-06-11T03:52:35Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>
@@ -934,7 +964,7 @@
 	<key>SmartPlacement</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
-	<real>0.40000000596046448</real>
+	<real>0.4472430944442749</real>
 	<key>SwitchTabModifier</key>
 	<integer>4</integer>
 	<key>SwitchWindowModifier</key>
@@ -966,6 +996,6 @@
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
-	<string>2.0.0.20141103</string>
+	<string>2.1.1</string>
 </dict>
 </plist>
