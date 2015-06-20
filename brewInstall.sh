@@ -44,6 +44,8 @@ brew install openssh --with-brewed-openssl
 brew install vim --override-system-vi
 brew install macvim --override-system-vim --custom-system-icons
 brew install unzip
+brew install tmux
+brew install reattach-to-user-namespace
 
 
 cat >> ~/.bashrc << EOF
