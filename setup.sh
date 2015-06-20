@@ -8,7 +8,7 @@ echo
 read -p "Enter your Git email: " USER_EMAIL
 
 # Restore Git config
-cp ./gitconfig ~/.gitconfig
+ln -s ${PWD}/gitconfig ~/.gitconfig
 
 if [ "${OSTYPE:0:6}" == "darwin" ] ; then
     SED_IN_PLACE_CMD="sed -i .bak"
@@ -20,11 +20,11 @@ ${SED_IN_PLACE_CMD} "s/{USER_NAME}/${USER_NAME}/" ~/.gitconfig
 ${SED_IN_PLACE_CMD} "s/{USER_EMAIL}/${USER_EMAIL}/" ~/.gitconfig
 
 # Restore Vim config
-cp -r ./vim ~/.vim
-cp ./vimrc ~/.vimrc
+ln -s ${PWD}/vim ~/.vim
+ln -s ${PWD}/vimrc ~/.vimrc
 
 # Update bashrc with git branch prompt
-cp ./git-prompt.sh ~/.git-prompt.sh
-cp ./bashrc ~/.bashrc
+ln -s ${PWD}/git-prompt.sh ~/.git-prompt.sh
+ln -s ${PWD}/bashrc ~/.bashrc
 
 echo "Done! Launch a new terminal and run brewInstall.sh"
