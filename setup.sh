@@ -27,4 +27,8 @@ ln -s ${PWD}/vimrc ~/.vimrc
 ln -s ${PWD}/git-prompt.sh ~/.git-prompt.sh
 ln -s ${PWD}/bashrc ~/.bashrc
 
+# ZSH setup
+ln -s ${PWD}/zshrc ~/.zshrc
+ln -s ${PWD}/tmux.conf ~/.tmux.conf
+
 echo "Done! Launch a new terminal and run brewInstall.sh"
