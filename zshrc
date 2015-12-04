@@ -45,7 +45,8 @@ ZSH_THEME="random"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git github brew osx sublime tmux)
+plugins=(git github colored-man colorize brew osx sublime tmux jira vagrant pip python zsh-completions zsh-syntax-highlighting)
+autoload -U compinit && compinit
 
 # User configuration
 export EDITOR='vim'
@@ -74,12 +75,16 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
-bindkey -v
+#bindkey -v
 setopt AUTO_CD
 
 # vi style incremental search
-bindkey '^R' history-incremental-search-backward
-bindkey '^S' history-incremental-search-forward
-bindkey '^P' history-search-backward
-bindkey '^N' history-search-forward
+#bindkey '^R' history-incremental-search-backward
+#bindkey '^S' history-incremental-search-forward
+#bindkey '^P' history-search-backward
+#bindkey '^N' history-search-forward
+
+# For AWS auto-completion
+source /usr/local/bin/aws_zsh_completer.sh

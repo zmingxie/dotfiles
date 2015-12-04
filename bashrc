@@ -16,4 +16,13 @@ export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40
 source ~/.git-prompt.sh
 PS1='\[\033[0;1;35m\]\u@\h: \[\033[0;32m\]\W$(__git_ps1 " (%s)") >\[\033[0m\] '
 
-export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+# Bash git completion
+if [ -f /usr/local/etc/bash_completion ]; then
+    . /usr/local/etc/bash_completion
+fi
+
+alias ls='gls --color=auto' ## Only works with 'brew install coreutils'
+
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

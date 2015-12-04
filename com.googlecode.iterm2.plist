@@ -119,9 +119,9 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>110 399 924 485 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>179 242 710 558 0 0 1680 1027 </string>
+	<string>865 439 710 558 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>229 10 710 558 0 0 1680 1027 </string>
+	<string>6 469 725 558 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 10</key>
 	<string>418 547 570 473 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 11</key>
@@ -129,9 +129,9 @@
 	<key>NSWindow Frame iTerm Window 12</key>
 	<string>460 501 570 473 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>940 337 570 473 0 0 1680 1027 </string>
+	<string>328 418 710 558 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>393 381 710 558 0 0 1680 1027 </string>
+	<string>365 169 892 694 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
 	<string>292 26 570 473 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
@@ -889,7 +889,7 @@
 	<key>NoSyncTimeOfLastPromo</key>
 	<real>455000889.08050501</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>455687637.90649998</real>
+	<real>467765935.09598899</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -948,11 +948,11 @@
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedURL</key>
-	<string>http://iterm2.com/appcasts/testing.xml</string>
+	<string>https://iterm2.com/appcasts/testing.xml</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-06-11T03:52:35Z</date>
+	<date>2015-11-02T02:31:20Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>
@@ -988,14 +988,18 @@
 	<key>WebKitDefaultFontSize</key>
 	<integer>11</integer>
 	<key>WebKitStandardFont</key>
-	<string>.Helvetica Neue DeskInterface</string>
+	<string>.AppleSystemUIFont</string>
 	<key>WindowNumber</key>
 	<true/>
 	<key>WindowStyle</key>
 	<integer>0</integer>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
+	<key>findIgnoreCase_iTerm</key>
+	<true/>
+	<key>findRegex_iTerm</key>
+	<false/>
 	<key>iTerm Version</key>
-	<string>2.1.1</string>
+	<string>2.1.4</string>
 </dict>
 </plist>
