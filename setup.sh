@@ -19,6 +19,9 @@ fi
 ${SED_IN_PLACE_CMD} "s/{USER_NAME}/${USER_NAME}/" ~/.gitconfig
 ${SED_IN_PLACE_CMD} "s/{USER_EMAIL}/${USER_EMAIL}/" ~/.gitconfig
 
+# Enable git autocorrect for half second
+git config --global help.autocorrect 5
+
 # Restore Vim config
 ln -s ${PWD}/vim ~/.vim
 ln -s ${PWD}/vimrc ~/.vimrc
