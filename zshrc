@@ -88,3 +88,7 @@ setopt AUTO_CD
 
 # For AWS auto-completion
 source /usr/local/bin/aws_zsh_completer.sh
+
+# NVM setup
+export NVM_DIR=~/.nvm
+. $(brew --prefix nvm)/nvm.sh
