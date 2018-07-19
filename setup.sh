@@ -34,4 +34,6 @@ ln -s ${PWD}/bashrc ~/.bashrc
 ln -s ${PWD}/zshrc ~/.zshrc
 ln -s ${PWD}/tmux.conf ~/.tmux.conf
 
+# VS Code setup
+ln -s ${PWD}/settings.json "${HOME}/Library/Application Support/Code/User/settings.json"
 echo "Done! Launch a new terminal and run brewInstall.sh"

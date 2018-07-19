@@ -1,0 +1,14 @@
+{
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "boundary",
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.explorerKind": "external",
+    "terminal.integrated.scrollback": 50000,
+    "terminal.integrated.cursorBlinking": true,
+    "python.pythonPath": "/usr/local/bin/python2",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "window.zoomLevel": 0,
+    "explorer.confirmDelete": false
+}
