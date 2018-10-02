@@ -10,5 +10,6 @@
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "window.zoomLevel": 0,
-    "explorer.confirmDelete": false
+    "explorer.confirmDelete": false,
+    "workbench.startupEditor": "welcomePage"
 }

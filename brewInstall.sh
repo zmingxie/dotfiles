@@ -48,6 +48,12 @@ brew install tmux
 brew install reattach-to-user-namespace
 
 
+# brew cask install
+brew tap caskroom/cask
+brew cask install spectacle
+
+
+
 cat >> ~/.bashrc << EOF
 # Bash git completion
 if [ -f `brew --prefix`/etc/bash_completion ]; then
