@@ -10,6 +10,8 @@ hi Search cterm=NONE ctermfg=grey ctermbg=darkyellow
 set hlsearch
 call pathogen#infect()
 
+"Shows a $ sign at the end of each line and shows ^I instead of tabs.
+set list
 "Always use unix line endings"
 set ff=unix
 "Show (partial) command in status line.
@@ -32,6 +34,9 @@ set autowrite
 
 "Hide buffers when they are abandoned
 set hidden
+
+" Spli window on the right instead of default
+set splitright
 
 " Turn off default mappings imposed by macvim
 let macvim_skip_cmd_opt_movement = 1
@@ -70,3 +75,6 @@ function! XTermPasteBegin()
 endfunction
 
 inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
+
+" Enable fuzzy search
+set rtp+=/usr/local/opt/fzf

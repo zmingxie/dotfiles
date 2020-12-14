@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/Users/mingxie/kira/backend/docker-images/builder-go'
+let g:netrw_dirhist_2='/Users/mingxie/kira/.vscode'
+let g:netrw_dirhist_1='/Users/mingxie/dev/nomad-dojo/run-your-own-dojo'
+let g:netrw_dirhist_0='/Users/mingxie/dev/ckad-labs/lab2/vm'
+let g:netrw_dirhist_9='/Users/mingxie/kira/vault/.git'
+let g:netrw_dirhist_8='/Users/mingxie/kira/flux/flux-get-started'
+let g:netrw_dirhist_7='/Users/mingxie/dev/golang/.git'
+let g:netrw_dirhist_6='/Users/mingxie/kira/kira.exchange/cypress/cypress/plugins'
+let g:netrw_dirhist_5='/Users/mingxie/kira/kira.exchange/cypress/cypress'
+let g:netrw_dirhist_4='/Users/mingxie/kira/kira.exchange/cypress'

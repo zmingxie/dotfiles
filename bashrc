@@ -26,3 +26,21 @@ alias ls='gls --color=auto' ## Only works with 'brew install coreutils'
 
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+# added by travis gem
+[ -f /Users/mingxie/.travis/travis.sh ] && source /Users/mingxie/.travis/travis.sh
+
+complete -C /usr/local/bin/vault vault
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+source <(kubectl completion bash)
+alias k=kubectl
+complete -F __start_kubectl k
+
+complete -C /usr/local/Cellar/tfenv/2.0.0/versions/0.13.0/terraform terraform
+
+complete -C /usr/local/Cellar/tfenv/2.0.0/versions/0.13.4/terraform terraform
+
+# >>>> Vagrant command completion (start)
+. /opt/vagrant/embedded/gems/2.2.10/gems/vagrant-2.2.10/contrib/bash/completion.sh
+# <<<<  Vagrant command completion (end)
