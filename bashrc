@@ -44,3 +44,6 @@ complete -C /usr/local/Cellar/tfenv/2.0.0/versions/0.13.4/terraform terraform
 # >>>> Vagrant command completion (start)
 . /opt/vagrant/embedded/gems/2.2.10/gems/vagrant-2.2.10/contrib/bash/completion.sh
 # <<<<  Vagrant command completion (end)
+
+# GPG config
+export GPG_TTY=`tty`
