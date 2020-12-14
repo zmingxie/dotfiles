@@ -1,14 +1,14 @@
 [user]
-	name = {USER_NAME}
-	email = {USER_EMAIL}
+  name = {USER_NAME}
+  email = {USER_EMAIL}
 [core]
-	editor = vim
+  editor = vim
 [color]
-	ui = auto
-	branch = auto
-	diff = auto
-	interactive = auto
-	status = auto
+  ui = auto
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
 [log]
   abbrevCommit = true
   decorate = true
