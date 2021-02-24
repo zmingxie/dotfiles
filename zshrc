@@ -124,18 +124,18 @@ export PATH="/usr/local/opt/findutils/libexec/gnubin:/usr/local/opt/gnu-indent/l
 alias ls="exa"
 
 DEFAULT_USER="mingxie"
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
+#. $HOME/.asdf/asdf.sh
+#. $HOME/.asdf/completions/asdf.bash
 
 # aws-vault
-. /Users/mingxie/dev/aws-vault/completions/bash/aws-vault
-awsvl() {
+#. /Users/mingxie/dev/aws-vault/completions/bash/aws-vault
+#awsvl() {
 #    aws-vault --debug login $1 --mfa-token=$2 --stdout | xargs -t nohup $(which google-chrome-stable) %U --no-first-run --new-window --disk-cache-dir=$(mktemp -d /tmp/chrome.XXXXXX) --user-data-dir=$(mktemp -d /tmp/chrome.XXXXXX) >/dev/null 2>&1 &
-    aws-vault --debug login $1 --stdout | xargs -t nohup $(which google-chrome-stable) %U --no-first-run --new-window --disk-cache-dir=$(mktemp -d /tmp/chrome.XXXXXX) --user-data-dir=$(mktemp -d /tmp/chrome.XXXXXX) >/dev/null 2>&1 &
-}
-awsve() {
-    aws-vault exec --assume-role-ttl=60m --session-ttl=12h $@
-}
+#    aws-vault --debug login $1 --stdout | xargs -t nohup $(which google-chrome-stable) %U --no-first-run --new-window --disk-cache-dir=$(mktemp -d /tmp/chrome.XXXXXX) --user-data-dir=$(mktemp -d /tmp/chrome.XXXXXX) >/dev/null 2>&1 &
+#}
+#awsve() {
+#    aws-vault exec --assume-role-ttl=60m --session-ttl=12h $@
+#}
 
 # JENV
 #export PATH="$HOME/.jenv/bin:$PATH"
@@ -210,7 +210,15 @@ compinit
 # <<<<  Vagrant command completion (end)
 
 # Make yq work like jq
-alias yqr="yq -C r -"
+alias yqr="yq e -P -C -"
 
 # GPG config
 export GPG_TTY=`tty`
+
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"
+
+# ArgoCD
+source <(argocd completion zsh)
