@@ -1,0 +1,19 @@
+Host github
+  User git
+  HostName github.com
+  IdentityFile ~/.ssh/id_rsa
+
+CanonicalizeHostname yes
+# Internal hosts
+Host "10.*.*.*", "172.*.*.*"
+  User mxie
+  StrictHostKeyChecking no
+  IdentityFile ~/.ssh/id_ed25519
+
+# AWS session manager SSH
+host i-*
+  User ec2-user
+  IdentityFile ~/.ssh/id_rsa
+  ProxyCommand ~/.ssh/aws-ssm-ec2-proxy-command.sh %h %r %p ~/.ssh/id_rsa.pub
+  StrictHostKeyChecking no
+
