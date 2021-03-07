@@ -1,6 +1,11 @@
 [user]
   name = {USER_NAME}
   email = {USER_EMAIL}
+  signingkey = {SIGN_KEY}
+
+[includeIf "gitdir:~/dev/"]
+  path = ~/.gitconfig_mxie_dev
+
 [core]
   editor = vim
 [color]
@@ -13,3 +18,18 @@
   abbrevCommit = true
   decorate = true
 
+[help]
+  autocorrect = 5
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+
+[remote "origin"]
+  prune = true
+
+[commit]
+  gpgsign = true
+[gpg]
+  program = /usr/local/bin/gpg
